@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8 - Form đặt vé máy bay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<body>
+    <div class="container border rounded mt-4 p-4" style="max-width: 600px;">
+        
+        <div class="alert alert-warning alert-dismissible fade show rounded-0" role="alert">
+            &nbsp;
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <h1 class="mb-4">Form đặt vé máy bay</h1>
+
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Họ tên</label>
+                <div class="input-group">
+                    <span class="input-group-text bg-white text-secondary">
+                        <i class="bi bi-person"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Họ tên">
+                    <span class="input-group-text bg-light text-secondary">vnđ</span>
+                </div>
+                <div class="form-text">Phải nhập 5 ký tự, in hoa....</div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Địa chỉ</label>
+                <input type="text" class="form-control">
+                <div class="form-text">Phải nhập 5 ký tự, in hoa....</div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label">Đi từ</label>
+                    <select class="form-select text-secondary">
+                        <option>Hà Nội</option>
+                        <option>Đà Nẵng</option>
+                        <option>Hồ Chí Minh</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Đến</label>
+                    <select class="form-select text-secondary">
+                        <option>Hà Nội</option>
+                        <option>Đà Nẵng</option>
+                        <option>Hồ Chí Minh</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label d-block">Chọn chiều đi (Khứ hồi)</label>
+                <div class="form-check">
+                    <input class="form-check-input border-secondary" type="checkbox" name="trip_di" id="di">
+                    <label class="form-check-label" for="di">Đi</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input border-secondary" type="checkbox" name="trip_ve" id="ve">
+                    <label class="form-check-label" for="ve">Về</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 py-2">
+                Đặt vé
+            </button>
+        </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
